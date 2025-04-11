@@ -15,11 +15,11 @@
  ┗ 📄 submission.csv   # 提交格式示例
    ┗ 📋 需提交至Kaggle平台的文件格式模板
 # 项目文件
-`dog-breed-identification`：实验所需数据集
-`Dog-Breed-Identification-ConvNeXt.ipynb`、`Dog-Breed-Identification-ConvNeXt.py`：基于ConvNeXt的微调模型
-`Dog-Breed-Identification-Inception-Resnet50.ipynb`、`Dog-Breed-Identification-Inception-Resnet50.py`：基于InceptionV3和Resnet50的融合模型
-`Result-ConvNeXt`：ConvNeXt微调模型对应的实验结果
-`Result-InceptionV3-Resnet50`：InceptionV3和Resnet50的融合模型对应的实验结果
+`dog-breed-identification`：实验所需数据集  
+`Dog-Breed-Identification-ConvNeXt.ipynb`、`Dog-Breed-Identification-ConvNeXt.py`：基于ConvNeXt的微调模型  
+`Dog-Breed-Identification-Inception-Resnet50.ipynb`、`Dog-Breed-Identification-Inception-Resnet50.py`：基于InceptionV3和Resnet50的融合模型  
+`Result-ConvNeXt`：ConvNeXt微调模型对应的实验结果  
+`Result-InceptionV3-Resnet50`：InceptionV3和Resnet50的融合模型对应的实验结果  
 # 实验结果
 | Methods | Accuracy | AP | Kaggle |
 |:-------:|:--------:|:--:|:------:|
