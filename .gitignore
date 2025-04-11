@@ -1,0 +1,12 @@
+# 忽略split后的数据集
+Dataset/
+
+# 忽略数据集
+dog-breed-identification/
+
+# 忽略虚拟环境
+venv/
+
+# 忽略特定文件
+label_statistic.png
+requirements.txt 
