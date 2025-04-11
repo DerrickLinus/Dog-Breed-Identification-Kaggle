@@ -1,25 +1,32 @@
 # 项目简介
-本项目基于Kaggle平台的“Dog Breed Identification犬种识别”比赛，任务是**对120个类别的犬种图像进行分类**。本实验主要采用迁移学习的方法，利用预训练模型来实现对图像的多分类任务。具体而言，本实验采用两种方法（包含三个模型），一种是基于**InceptionV3和Resnet50**预训练模型的**集成学习**，另一种是基于**ConvNeXt**预训练模型的**微调**。
+- 本项目基于Kaggle平台的“Dog Breed Identification”比赛，任务是**对120个类别的犬种图像进行识别分类**。本实验主要采用迁移学习的方法，利用预训练模型来实现对图像的多分类任务。  
+- 具体而言，本实验采用两种方法（包含三个模型），一种是基于**InceptionV3和Resnet50**预训练模型的**集成学习**，另一种是基于**ConvNeXt**预训练模型的**微调**。
 # 数据介绍
-该比赛提供的数据集包含四个文件：
-📦 dog-breed-identification
- ┣ 📂 train            # 训练数据集
- ┃ ┗ 🖼️ 10222张图像    # 120个犬种类别
+数据集下载：https://www.kaggle.com/competitions/dog-breed-identification/data
+
+该比赛提供的数据集包含四个文件：  
+📦 dog-breed-identification  
+ ┣ 📂 train            # 训练数据集  
+ ┃ ┗ 🖼️ 10222张图像    # 120个犬种类别  
  ┃
- ┣ 📂 test             # 测试数据集
- ┃ ┗ 🖼️ 10357张图像    # 待分类的犬种图像
+ ┣ 📂 test             # 测试数据集  
+ ┃ ┗ 🖼️ 10357张图像    # 待分类的犬种图像  
  ┃
- ┣ 📄 label.csv        # 训练集标签文件
- ┃ ┗ 📋 对应train文件夹中犬种图像的分类标签
+ ┣ 📄 label.csv        # 训练集标签文件  
+ ┃ ┗ 📋 对应train文件夹中犬种图像的分类标签  
  ┃
- ┗ 📄 submission.csv   # 提交格式示例
-   ┗ 📋 需提交至Kaggle平台的文件格式模板
+ ┗ 📄 submission.csv   # 提交格式示例  
+   ┗ 📋 需提交至Kaggle平台的文件格式模板  
 # 项目文件
-`dog-breed-identification`：实验所需数据集  
-`Dog-Breed-Identification-ConvNeXt.ipynb`、`Dog-Breed-Identification-ConvNeXt.py`：基于ConvNeXt的微调模型  
-`Dog-Breed-Identification-Inception-Resnet50.ipynb`、`Dog-Breed-Identification-Inception-Resnet50.py`：基于InceptionV3和Resnet50的融合模型  
-`Result-ConvNeXt`：ConvNeXt微调模型对应的实验结果  
-`Result-InceptionV3-Resnet50`：InceptionV3和Resnet50的融合模型对应的实验结果  
+- src
+    - 基于ConvNeXt的微调模型
+        - `Dog-Breed-Identification-ConvNeXt.ipynb`
+        - `Dog-Breed-Identification-ConvNeXt.py`
+    - 基于InceptionV3和Resnet50的融合模型
+        - `Dog-Breed-Identification-Inception-Resnet50.ipynb`
+        - `Dog-Breed-Identification-Inception-Resnet50.py`
+- `Result-ConvNeXt`：ConvNeXt微调模型对应的实验结果  
+- `Result-InceptionV3-Resnet50`：InceptionV3和Resnet50的融合模型对应的实验结果  
 # 实验结果
 | Methods | Accuracy | AP | Kaggle |
 |:-------:|:--------:|:--:|:------:|
